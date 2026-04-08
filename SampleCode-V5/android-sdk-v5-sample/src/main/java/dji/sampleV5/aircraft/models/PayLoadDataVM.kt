@@ -7,6 +7,7 @@ import dji.v5.common.error.IDJIError
 import dji.v5.manager.aircraft.payload.PayloadCenter
 import dji.v5.manager.aircraft.payload.PayloadIndexType
 import dji.v5.manager.aircraft.payload.listener.PayloadDataListener
+import dji.sampleV5.aircraft.control.ExternalControlManager
 import dji.v5.utils.common.LogPath
 import dji.v5.utils.common.LogUtils
 import java.text.SimpleDateFormat
@@ -30,6 +31,9 @@ class PayLoadDataVM : DJIViewModel() {
             result += "，接收内容：$newValueString"
             LogUtils.i(LogPath.PAYLOAD,result)
             receiveMessageLiveData.postValue(result)
+            
+            // 收到 PSDK 数据后，转发给外部控制管理器尝试解析并执行虚拟摇杆控制
+            ExternalControlManager.handleExternalRequest(newValueString)
         } else {
             result += ",接收内容为空"
             receiveMessageLiveData.postValue(result)
