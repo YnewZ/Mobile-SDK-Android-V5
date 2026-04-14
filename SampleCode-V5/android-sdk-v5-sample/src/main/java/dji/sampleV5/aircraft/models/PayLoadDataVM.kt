@@ -69,10 +69,10 @@ class PayLoadDataVM : DJIViewModel() {
     private fun buildJsonParams(floats: FloatArray): String {
         return """
         {
-            "pitch": ${floats.getOrNull(0) ?: 0.0},
-            "roll": ${floats.getOrNull(1) ?: 0.0},
-            "yaw": ${floats.getOrNull(2) ?: 0.0},
-            "vertical": ${floats.getOrNull(3) ?: 0.0},
+            "roll": ${floats.getOrNull(0) ?: 0.0},
+            "pitch": ${floats.getOrNull(1) ?: 0.0},
+            "verticalThrottle": ${floats.getOrNull(2) ?: 0.0},
+            "yaw": ${floats.getOrNull(5) ?: 0.0},
             "rollPitchControlMode": "VELOCITY",
             "yawControlMode": "ANGULAR_VELOCITY",
             "verticalControlMode": "VELOCITY",

@@ -43,7 +43,7 @@ object ExternalControlManager {
      *   "pitch": 0.5,        // 俯仰角或速度
      *   "roll": 0.0,         // 翻滚角或速度
      *   "yaw": 10.0,         // 航向角或角速度
-     *   "vertical": 1.2,     // 垂直高度或速度
+     *   "verticalThrottle": 1.2,     // 垂直高度或速度
      *   "rollPitchControlMode": "VELOCITY", // 俯仰翻滚控制模式 (ANGLE 或 VELOCITY)
      *   "yawControlMode": "ANGULAR_VELOCITY", // 航向控制模式 (ANGLE 或 ANGULAR_VELOCITY)
      *   "verticalControlMode": "VELOCITY"     // 垂直控制模式 (POSITION 或 VELOCITY)
