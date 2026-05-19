@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/gimbal_button_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent="0.4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gimbal_control_title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gimbal_angle_control"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gimbal_angle_mode"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg_angle_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_absolute_angle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gimbal_angle_mode_absolute" />
+
+                <RadioButton
+                    android:id="@+id/radio_relative_angle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gimbal_angle_mode_relative"
+                    android:layout_marginStart="12dp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_pitch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/pitch"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:text="0"/>
+
+                <EditText
+                    android:id="@+id/et_roll"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/roll"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:text="0"/>
+
+                <EditText
+                    android:id="@+id/et_yaw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/yaw"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:text="0"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_rotate_angle"
+                style="@style/main_fragment_btn"
+                android:text="@string/btn_rotate_by_angle"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_angle_validation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gimbal_angle_input_valid"
+                android:textSize="12sp"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginTop="6dp"/>
+
+            <Button
+                android:id="@+id/btn_stop_rotate"
+                style="@style/main_fragment_btn"
+                android:text="@string/btn_stop_rotate"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gimbal_speed_control"
+                android:textSize="14sp"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_pitch_speed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/pitch_speed"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:text="10"/>
+
+                <EditText
+                    android:id="@+id/et_roll_speed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/roll_speed"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:text="0"/>
+
+                <EditText
+                    android:id="@+id/et_yaw_speed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/yaw_speed"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:text="0"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_rotate_by_speed"
+                style="@style/main_fragment_btn"
+                android:text="@string/btn_rotate_by_speed"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gimbal_other"
+                android:textSize="14sp"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/btn_reset_gimbal"
+                style="@style/main_fragment_btn"
+                android:text="@string/btn_reset_gimbal"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/btn_calibrate_gimbal"
+                style="@style/main_fragment_btn"
+                android:text="@string/btn_calibrate_gimbal"
+                android:layout_marginTop="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_gimbal_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/btn_set_mode"
+                style="@style/main_fragment_btn"
+                android:text="@string/btn_set_mode"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/gimbal_state_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintStart_toEndOf="@+id/gimbal_button_list"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gimbal_current_attitude"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_pitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pitch_label"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/roll_label"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_yaw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yaw_label"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gimbal_mode_label"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gimbal_attitude_range"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

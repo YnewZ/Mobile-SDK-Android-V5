@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(cp \"D:/Code/DFE/大疆无人机开发/Mobile-SDK-Android-V5-5.17.0/SampleCode-V5/android-sdk-v5-sample/src/main/java/dji/sampleV5/aircraft/models/CameraVM.kt\" \"D:/Code/DFE/DroneController/Mobile-SDK-Android-V5/SampleCode-V5/android-sdk-v5-sample/src/main/java/dji/sampleV5/aircraft/models/CameraVM.kt\")",
+      "Bash(cp \"D:/Code/DFE/大疆无人机开发/Mobile-SDK-Android-V5-5.17.0/SampleCode-V5/android-sdk-v5-sample/src/main/java/dji/sampleV5/aircraft/models/GimbalVM.kt\" \"D:/Code/DFE/DroneController/Mobile-SDK-Android-V5/SampleCode-V5/android-sdk-v5-sample/src/main/java/dji/sampleV5/aircraft/models/GimbalVM.kt\")",
+      "Bash(cp \"D:/Code/DFE/大疆无人机开发/Mobile-SDK-Android-V5-5.17.0/SampleCode-V5/android-sdk-v5-sample/src/main/java/dji/sampleV5/aircraft/pages/CameraFragment.kt\" \"D:/Code/DFE/DroneController/Mobile-SDK-Android-V5/SampleCode-V5/android-sdk-v5-sample/src/main/java/dji/sampleV5/aircraft/pages/CameraFragment.kt\")",
+      "Bash(cp \"D:/Code/DFE/大疆无人机开发/Mobile-SDK-Android-V5-5.17.0/SampleCode-V5/android-sdk-v5-sample/src/main/java/dji/sampleV5/aircraft/pages/GimbalFragment.kt\" \"D:/Code/DFE/DroneController/Mobile-SDK-Android-V5/SampleCode-V5/android-sdk-v5-sample/src/main/java/dji/sampleV5/aircraft/pages/GimbalFragment.kt\")",
+      "Bash(cp \"D:/Code/DFE/大疆无人机开发/Mobile-SDK-Android-V5-5.17.0/SampleCode-V5/android-sdk-v5-sample/src/main/res/layout/frag_camera_page.xml\" \"D:/Code/DFE/DroneController/Mobile-SDK-Android-V5/SampleCode-V5/android-sdk-v5-sample/src/main/res/layout/frag_camera_page.xml\")",
+      "Bash(cp \"D:/Code/DFE/大疆无人机开发/Mobile-SDK-Android-V5-5.17.0/SampleCode-V5/android-sdk-v5-sample/src/main/res/layout/frag_gimbal_page.xml\" \"D:/Code/DFE/DroneController/Mobile-SDK-Android-V5/SampleCode-V5/android-sdk-v5-sample/src/main/res/layout/frag_gimbal_page.xml\")",
+      "Bash(shopt -s globstar nullglob)",
+      "Bash(./gradlew :sample:assembleDebug *)",
+      "Bash(D:/Code/DFE/DroneController/Mobile-SDK-Android-V5/SampleCode-V5/android-sdk-v5-as/gradlew :sample:assembleDebug *)",
+      "Bash(D:/Code/DFE/DroneController/Mobile-SDK-Android-V5/SampleCode-V5/android-sdk-v5-as/gradlew *)",
+      "Bash(xargs cat *)",
+      "Bash(xargs grep *)"
+    ]
+  }
+}

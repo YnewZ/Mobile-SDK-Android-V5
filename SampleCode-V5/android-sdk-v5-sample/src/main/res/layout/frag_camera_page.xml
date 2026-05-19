@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/camera_button_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.45">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera Control"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera Mode"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/btn_set_mode_photo"
+                style="@style/main_fragment_btn"
+                android:text="Photo Mode"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/btn_set_mode_video"
+                style="@style/main_fragment_btn"
+                android:text="Video Mode"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zoom Control"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/et_zoom_ratio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Zoom Ratio"
+                    android:inputType="numberDecimal"
+                    android:text="1.0"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_set_zoom"
+                style="@style/main_fragment_btn"
+                android:text="Set Zoom"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capture"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/btn_shoot_photo"
+                style="@style/main_fragment_btn"
+                android:text="Take Photo"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Info"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_camera_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode: Unknown"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_zoom_ratio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zoom: --"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_saved_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saved: --"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:maxLines="2"
+                android:ellipsize="middle"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

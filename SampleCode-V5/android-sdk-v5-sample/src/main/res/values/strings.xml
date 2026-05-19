@@ -494,4 +494,45 @@ More refer to the release notes." </string>
     <string name="item_app_silently_upgrade_description">Demonstrate APP Silently Upgrade functions</string>
     <string name="btn_silently_upgrade_package">Set Silently Upgrade Package</string>
     <string name="btn_install_test_app">Install Test App</string>
+
+    <!-- Gimbal Control -->
+    <string name="item_gimbal_title">Gimbal</string>
+    <string name="item_gimbal_description">Demonstrate how to use gimbal control function</string>
+    <string name="gimbal_control_title">Gimbal Control</string>
+    <string name="gimbal_angle_control">Angle Control</string>
+    <string name="gimbal_angle_mode">Angle Mode</string>
+    <string name="gimbal_angle_mode_absolute">Absolute</string>
+    <string name="gimbal_angle_mode_relative">Relative</string>
+    <string name="gimbal_angle_input_valid">Angle input is within range</string>
+    <string name="gimbal_speed_control">Speed Control</string>
+    <string name="gimbal_other">Other Operations</string>
+    <string name="gimbal_current_attitude">Current Attitude</string>
+    <string name="gimbal_mode_label">Mode</string>
+    <string name="gimbal_attitude_range">Attitude Range</string>
+    <string name="pitch">Pitch</string>
+    <string name="roll">Roll</string>
+    <string name="yaw">Yaw</string>
+    <string name="pitch_speed">Pitch Speed</string>
+    <string name="roll_speed">Roll Speed</string>
+    <string name="yaw_speed">Yaw Speed</string>
+    <string name="pitch_label">Pitch</string>
+    <string name="roll_label">Roll</string>
+    <string name="yaw_label">Yaw</string>
+    <string name="btn_rotate_by_angle">Rotate by Angle</string>
+    <string name="btn_rotate_by_speed">Rotate by Speed</string>
+    <string name="btn_stop_rotate">Stop Rotate</string>
+    <string name="btn_set_mode">Set Mode</string>
+    <string name="btn_reset_gimbal">Reset Gimbal</string>
+    <string name="btn_calibrate_gimbal">Calibrate Gimbal</string>
+
+    <!-- Camera Control -->
+    <string name="item_camera_title">Camera</string>
+    <string name="item_camera_description">Demonstrate how to use camera function</string>
+
+    <!-- UDP Control -->
+    <string name="item_udp_title">UDP Control</string>
+    <string name="item_udp_description">Demonstrate how to control drone via UDP</string>
+    <string name="udp_server_not_started">Not started</string>
+    <string name="udp_btn_start">Start</string>
+    <string name="udp_btn_stop">Stop</string>
 </resources>

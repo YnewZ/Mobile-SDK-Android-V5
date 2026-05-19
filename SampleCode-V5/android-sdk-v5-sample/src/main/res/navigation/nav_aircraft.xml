@@ -227,4 +227,22 @@
         android:name="dji.sampleV5.aircraft.pages.IntelligentFlightFragment"
         android:label="intelligent_flight_page"
         tools:layout="@layout/frag_intelligent_flight_page"/>
+
+    <fragment
+        android:id="@+id/gimbal_page"
+        android:name="dji.sampleV5.aircraft.pages.GimbalFragment"
+        android:label="gimbal_page"
+        tools:layout="@layout/frag_gimbal_page"/>
+
+    <fragment
+        android:id="@+id/camera_page"
+        android:name="dji.sampleV5.aircraft.pages.CameraFragment"
+        android:label="camera_page"
+        tools:layout="@layout/frag_camera_page"/>
+
+    <fragment
+        android:id="@+id/udp_control_page"
+        android:name="dji.sampleV5.aircraft.pages.UdpControlFragment"
+        android:label="udp_control_page"
+        tools:layout="@layout/frag_udp_control_page"/>
 </navigation>
