@@ -56,7 +56,7 @@ abstract class DJIMainActivity : AppCompatActivity() {
 
     private val baseMainActivityVm: BaseMainActivityVm by viewModels()
     private val msdkInfoVm: MSDKInfoVm by viewModels()
-    private val msdkManagerVM: MSDKManagerVM by globalViewModels()
+    protected val msdkManagerVM: MSDKManagerVM by globalViewModels()
     private lateinit var binding: ActivityMainBinding
     private val handler: Handler = Handler(Looper.getMainLooper())
     private val disposable = CompositeDisposable()

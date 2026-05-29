@@ -95,7 +95,7 @@ class LiveFragment : DJIFragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        stopLive()
+        removeCameraStreamSurface()
     }
 
     @SuppressLint("SetTextI18n")
