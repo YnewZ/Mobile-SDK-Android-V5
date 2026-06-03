@@ -96,4 +96,10 @@
         android:label="log_info_page"
         tools:layout="@layout/frag_app_silently_upgrade_page"/>
 
+    <fragment
+        android:id="@+id/key_patrol_photo_page"
+        android:name="dji.sampleV5.aircraft.pages.PatrolPhotoFragment"
+        android:label="patrol_photo_page"
+        tools:layout="@layout/frag_patrol_photo"/>
+
 </navigation>

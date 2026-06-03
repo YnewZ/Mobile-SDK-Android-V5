@@ -23,10 +23,12 @@
 
 package dji.v5.ux.sample.showcase.defaultlayout;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -208,6 +210,12 @@ public class DefaultLayoutActivity extends AppCompatActivity {
         if (settingWidget != null) {
             settingWidget.setOnClickListener(v -> toggleRightDrawer());
         }
+
+        Button patrolBtn = findViewById(R.id.btn_patrol_capture);
+        patrolBtn.setOnClickListener(v -> {
+            Intent intent = new Intent("dji.sampleV5.aircraft.action.SHOW_PATROL");
+            startActivity(intent);
+        });
 
         // Setup top bar state callbacks
         SystemStatusWidget systemStatusWidget = topBarPanel.getSystemStatusWidget();

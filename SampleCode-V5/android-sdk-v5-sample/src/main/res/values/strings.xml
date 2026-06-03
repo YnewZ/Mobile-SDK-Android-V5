@@ -529,6 +529,10 @@ More refer to the release notes." </string>
     <string name="item_camera_title">Camera</string>
     <string name="item_camera_description">Demonstrate how to use camera function</string>
 
+    <!-- Patrol Photo -->
+    <string name="item_patrol_photo_title">Patrol Photo</string>
+    <string name="item_patrol_photo_description">Take photo with ID and upload to server</string>
+
     <!-- UDP Control -->
     <string name="item_udp_title">UDP Control</string>
     <string name="item_udp_description">Demonstrate how to control drone via UDP</string>
